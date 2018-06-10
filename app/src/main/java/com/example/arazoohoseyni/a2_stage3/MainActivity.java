@@ -11,14 +11,4 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public static class Validator {
-        private boolean valid;
-        private String password;
-        private String message;
-
-        public Validator(){
-            valid = true;
-            message = "";
-        }
-
 }
