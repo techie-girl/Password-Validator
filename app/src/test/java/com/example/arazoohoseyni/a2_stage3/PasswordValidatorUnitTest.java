@@ -39,35 +39,30 @@ public class PasswordValidatorUnitTest {
   public void WeakPassword1IsWeak() {
     //if the password entered is password then return false
     assertFalse(validator.validate(WeakPassword1));
-//    Assert.assertEquals("Password is not long enough, must be 8 chars +", validator.printMessage());
   }
 
   @Test
   public void WeakPassword2IsWeak() {
     //making it case insensitve, so even if PASSWORD cap is put in it still fails.
     assertFalse(validator.validate(WeakPassword2));
-//    Assert.assertEquals("", validator.printMessage());
   }
 
   @Test
   public void WeakPassword3IsWeak() {
     //must have 8 char, else false
     assertFalse(validator.validate(WeakPassword3));
-//    Assert.assertEquals("", validator.printMessage());
   }
 
   @Test
   public void WeakPassword4IsWeak() {
     //rrequired one number
     assertFalse(validator.validate(WeakPassword4));
-//    Assert.assertEquals("", validator.printMessage());
   }
 
   @Test
   public void WeakPassword5IsWeak() {
     //missing special CHAR
     assertFalse(validator.validate(WeakPassword5));
-//    Assert.assertEquals("", validator.printMessage());
   }
 
 
@@ -75,7 +70,6 @@ public class PasswordValidatorUnitTest {
   public void StrongPasswordIsStrong() {
     //strong passwrd.. PASS
     assertTrue(validator.validate(StrongPassword));
-//    Assert.assertEquals("", validator.printMessage());
 
   }
 }
